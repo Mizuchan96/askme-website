@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Askme</title>
+    <style>
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0; 
+        background-color:white;
+        margin-left: 100px;
+        z-index: 2;
+      }
+
+      .img_content img {
+        width: 100%;
+      }
+
+      .page_content {
+        display: flex;
+        flex-direction: row;
+      }
+      .all_page {
+        margin-top: 220px;
+        margin-left: 100px;
+        position: relative;
+        z-index: 1;
+
+      }
+
+      .img_content {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <p
+        style="
+          color: lightskyblue;
+          display: flex;
+          justify-content: center;
+          font-weight: bold;
+          align-items: center;
+          font-size: xx-large;
+        "
+      >
+        Ask Me Everything You Want To Know!
+      </p>
+      <script src="index.js"></script>
+      <div
+        style="
+        
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          border: solid 1px gray;
+          max-width: 500px;
+          min-height: 40px;
+          margin: 0 auto;
+          border-radius: 10px;
+
+          
+        "
+      >
+        <input
+          type="text"
+          placeholder="Ask me"
+          style="
+            width: 500px;
+            height: 40px;
+            padding-left: 10px;
+            border-style: solid;
+            border-color: cornflowerblue;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            outline: none;
+            border: none;
+          "
+        />
+
+        <button
+          style="
+            width: 50px;
+            height: 46px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-color: cornflowerblue;
+            border-style: solid;
+            cursor: pointer;
+            background-color: white;
+            border:none;
+          "
+        >
+          <img
+            title="Tìm kiếm"
+            class="picture"
+            src="loupe.png"
+            style="height: 30px; width: 30px"
+          />
+        </button>
+      </div>
+      <div style="display: flex; justify-content: center; margin-top: 20px">
+        <button
+          title="Tìm kiếm bằng tiếng Nhật"
+          style="
+            margin-right: 50px;
+            width: 150px;
+            height: 30px;
+            background-color: rgb(86, 178, 209);
+            color: white;
+            border-color: rgb(208, 203, 203);
+            border-style: so;
+            cursor: pointer;
+          "
+        >
+          Ask by Japanese
+        </button>
+        <button
+          title="Tìm kiếm bằng tiếng Anh"
+          style="
+            margin-right: 50px;
+            width: 150px;
+            height: 30px;
+            background-color: rgb(86, 178, 209);
+            color: white;
+            border-color: rgb(208, 203, 203);
+            border-style: so;
+            cursor: pointer;
+          "
+        >
+          Ask by English
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="beside_left"
+      style="
+        position: fixed;
+        top: 220px;
+        left: 0;
+        bottom: 0;
+        background-color: rgb(188, 124, 124);
+        width: 100px;
+      "
+    >  <div style="display: flex; flex-direction: column; margin-top: 20px; margin-left: 5px;">
+      <a style="color: white; font-weight: bold; margin-top: 20px;" href="https://www.facebook.com/profile.php?id=100064753757386">STUDY</a>
+      <a style="color: white; font-weight: bold; margin-top: 20px;" href="https://www.facebook.com/profile.php?id=100064753757386">JOBS</a>
+      <a style="color: white; font-weight: bold; margin-top: 20px;" href="https://www.facebook.com/profile.php?id=100064753757386">TRAVEL</a>
+    </div>
+    </div>
+
+    <div class="all_page">
+      <div class="page_content">
+        <div class="img_content">
+          <div style="position: relative;">
+            <img src="thumbnails/thumbnail-flexbox.jpg" />
+            <div
+              style="position: absolute; background-color: rgb(100, 95, 95); color: white; bottom: 10px; right: 2px;padding: 4px; border-radius: 5px;"
+            >
+              9:20
+            </div>
+          </div>
+
+          <div class="info" style="display: flex; flex-direction: column">
+            <p class="p1">
+              2 HOURS STUDY WITH ME ~ Calm Piano <i class="bx bxs-piano"></i> ~
+              Rain Sound <i class="bx bx-cloud-light-rain"></i>
+            </p>
+
+            <p class="p2">dearmystudy</p>
+            <p class="p3">2,7k view &#183; 7 months ago</p>
+          </div>
+        </div>
+        <div class="img_content">
+          <div style="position: relative;">
+            <img src="thumbnails/thumbnail-flexbox.jpg" />
+            <div
+              style="position: absolute; background-color: rgb(100, 95, 95); color: white; bottom: 10px; right: 2px;"
+            >
+              9:20
+            </div>
+          </div>
+          <div class="info" style="display: flex; flex-direction: column">
+            <p class="p1">
+              2 HOURS STUDY WITH ME ~ Calm Piano <i class="bx bxs-piano"></i> ~
+              Rain Sound <i class="bx bx-cloud-light-rain"></i>
+            </p>
+
+            <p class="p2">dearmystudy</p>
+            <p class="p3">2,7k view &#183; 7 months ago</p>
+          </div>
+        </div>
+        <div class="img_content">
+          <div style="position: relative;">
+            <img src="thumbnails/thumbnail-flexbox.jpg" />
+            <div
+              style="position: absolute; background-color: rgb(100, 95, 95); color: white; bottom: 10px; right: 2px;"
+            >
+              9:20
+            </div>
+          </div>
+          <div class="info" style="display: flex; flex-direction: column">
+            <p class="p1">
+              2 HOURS STUDY WITH ME ~ Calm Piano <i class="bx bxs-piano"></i> ~
+              Rain Sound <i class="bx bx-cloud-light-rain"></i>
+            </p>
+
+            <p class="p2">dearmystudy</p>
+            <p class="p3">2,7k view &#183; 7 months ago</p>
+          </div>
+        </div>
+        <div class="img_content">
+          <div style="position: relative;">
+            <img src="thumbnails/thumbnail-flexbox.jpg" />
+            <div
+              style="position: absolute; background-color: rgb(100, 95, 95); color: white; bottom: 10px; right: 2px;"
+            >
+              9:20
+            </div>
+          </div>
+          <div class="info" style="display: flex; flex-direction: column">
+            <p class="p1">
+              2 HOURS STUDY WITH ME ~ Calm Piano <i class="bx bxs-piano"></i> ~
+              Rain Sound <i class="bx bx-cloud-light-rain"></i>
+            </p>
+
+            <p class="p2">dearmystudy</p>
+            <p class="p3">2,7k view &#183; 7 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="page_content">
+        <div class="img_content">
+          <div style="position: relative;">
+            <img src="thumbnails/thumbnail-flexbox.jpg" />
+            <div
+              style="position: absolute; background-color: rgb(100, 95, 95); color: white; bottom: 10px; right: 2px;"
+            >
+              9:20
+            </div>
+          </div>
+          <div class="info" style="display: flex; flex-direction: column">
+            <p class="p1">
+              2 HOURS STUDY WITH ME ~ Calm Piano <i class="bx bxs-piano"></i> ~
+              Rain Sound <i class="bx bx-cloud-light-rain"></i>
+            </p>
+
+            <p class="p2">dearmystudy</p>
+            <p class="p3">2,7k view &#183; 7 months ago</p>
+          </div>
+        </div>
+        <div class="img_content">
+          <div style="position: relative;">
+            <img src="thumbnails/thumbnail-flexbox.jpg" />
+            <div
+              style="position: absolute; background-color: rgb(100, 95, 95); color: white; bottom: 10px; right: 2px;"
+            >
+              9:20
+            </div>
+          </div>
+          <div class="info" style="display: flex; flex-direction: column">
+            <p class="p1">
+              2 HOURS STUDY WITH ME ~ Calm Piano <i class="bx bxs-piano"></i> ~
+              Rain Sound <i class="bx bx-cloud-light-rain"></i>
+            </p>
+
+            <p class="p2">dearmystudy</p>
+            <p class="p3">2,7k view &#183; 7 months ago</p>
+          </div>
+        </div>
+        <div class="img_content">
+          <div style="position: relative;">
+            <img src="thumbnails/thumbnail-flexbox.jpg" />
+            <div
+              style="position: absolute; background-color: rgb(100, 95, 95); color: white; bottom: 10px; right: 2px;"
+            >
+              9:20
+            </div>
+          </div>
+          <div class="info" style="display: flex; flex-direction: column">
+            <p class="p1">
+              2 HOURS STUDY WITH ME ~ Calm Piano <i class="bx bxs-piano"></i> ~
+              Rain Sound <i class="bx bx-cloud-light-rain"></i>
+            </p>
+
+            <p class="p2">dearmystudy</p>
+            <p class="p3">2,7k view &#183; 7 months ago</p>
+          </div>
+        </div>
+        <div class="img_content">
+          <div style="position: relative;">
+            <img src="thumbnails/thumbnail-flexbox.jpg" />
+            <div
+              style="position: absolute; background-color: rgb(100, 95, 95); color: white; bottom: 10px; right: 2px;"
+            >
+              9:20
+            </div>
+          </div>
+          <div class="info" style="display: flex; flex-direction: column">
+            <p class="p1">
+              2 HOURS STUDY WITH ME ~ Calm Piano <i class="bx bxs-piano"></i> ~
+              Rain Sound <i class="bx bx-cloud-light-rain"></i>
+            </p>
+
+            <p class="p2">dearmystudy</p>
+            <p class="p3">2,7k view &#183; 7 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="page_content">
+        <div class="img_content">
+          <div style="position: relative;">
+            <img src="thumbnails/thumbnail-flexbox.jpg" />
+            <div
+              style="position: absolute; background-color: rgb(100, 95, 95); color: white; bottom: 10px; right: 2px;"
+            >
+              9:20
+            </div>
+          </div>
+          <div class="info" style="display: flex; flex-direction: column">
+            <p class="p1">
+              2 HOURS STUDY WITH ME ~ Calm Piano <i class="bx bxs-piano"></i> ~
+              Rain Sound <i class="bx bx-cloud-light-rain"></i>
+            </p>
+
+            <p class="p2">dearmystudy</p>
+            <p class="p3">2,7k view &#183; 7 months ago</p>
+          </div>
+        </div>
+        <div class="img_content"><div style="position: relative;">
+          <img src="thumbnails/thumbnail-flexbox.jpg" />
+          <div
+            style="position: absolute; background-color: rgb(100, 95, 95); color: white; bottom: 10px; right: 2px;"
+          >
+            9:20
+          </div>
+        </div>
+          <div class="info" style="display: flex; flex-direction: column">
+            <p class="p1">
+              2 HOURS STUDY WITH ME ~ Calm Piano <i class="bx bxs-piano"></i> ~
+              Rain Sound <i class="bx bx-cloud-light-rain"></i>
+            </p>
+
+            <p class="p2">dearmystudy</p>
+            <p class="p3">2,7k view &#183; 7 months ago</p>
+          </div>
+        </div>
+        <div class="img_content">
+          <div style="position: relative;">
+            <img src="thumbnails/thumbnail-flexbox.jpg" />
+            <div
+              style="position: absolute; background-color: rgb(100, 95, 95); color: white; bottom: 10px; right: 2px;"
+            >
+              9:20
+            </div>
+          </div>
+          <div class="info" style="display: flex; flex-direction: column">
+            <p class="p1">
+              2 HOURS STUDY WITH ME ~ Calm Piano <i class="bx bxs-piano"></i> ~
+              Rain Sound <i class="bx bx-cloud-light-rain"></i>
+            </p>
+
+            <p class="p2">dearmystudy</p>
+            <p class="p3">2,7k view &#183; 7 months ago</p>
+          </div>
+        </div>
+        <div class="img_content">
+          <div style="position: relative;">
+            <img src="thumbnails/thumbnail-flexbox.jpg" />
+            <div
+              style="position: absolute; background-color: rgb(100, 95, 95); color: white; bottom: 10px; right: 2px;"
+            >
+              9:20
+            </div>
+          </div>
+          <div class="info" style="display: flex; flex-direction: column">
+            <p class="p1">
+              2 HOURS STUDY WITH ME ~ Calm Piano <i class="bx bxs-piano"></i> ~
+              Rain Sound <i class="bx bx-cloud-light-rain"></i>
+            </p>
+
+            <p class="p2">dearmystudy</p>
+            <p class="p3">2,7k view &#183; 7 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="page_content">
+        <div class="img_content">
+          <div style="position: relative;">
+            <img src="thumbnails/thumbnail-flexbox.jpg" />
+            <div
+              style="position: absolute; background-color: rgb(100, 95, 95); color: white; bottom: 10px; right: 2px;"
+            >
+              9:20
+            </div>
+          </div>
+          <div class="info" style="display: flex; flex-direction: column">
+            <p class="p1">
+              2 HOURS STUDY WITH ME ~ Calm Piano <i class="bx bxs-piano"></i> ~
+              Rain Sound <i class="bx bx-cloud-light-rain"></i>
+            </p>
+
+            <p class="p2">dearmystudy</p>
+            <p class="p3">2,7k view &#183; 7 months ago</p>
+          </div>
+        </div>
+        <div class="img_content">
+          <div style="position: relative;">
+            <img src="thumbnails/thumbnail-flexbox.jpg" />
+            <div
+              style="position: absolute; background-color: rgb(100, 95, 95); color: white; bottom: 10px; right: 2px;"
+            >
+              9:20
+            </div>
+          </div>
+          <div class="info" style="display: flex; flex-direction: column">
+            <p class="p1">
+              2 HOURS STUDY WITH ME ~ Calm Piano <i class="bx bxs-piano"></i> ~
+              Rain Sound <i class="bx bx-cloud-light-rain"></i>
+            </p>
+
+            <p class="p2">dearmystudy</p>
+            <p class="p3">2,7k view &#183; 7 months ago</p>
+          </div>
+        </div>
+        <div class="img_content">
+          <div style="position: relative;">
+            <img src="thumbnails/thumbnail-flexbox.jpg" />
+            <div
+              style="position: absolute; background-color: rgb(100, 95, 95); color: white; bottom: 10px; right: 2px;"
+            >
+              9:20
+            </div>
+          </div>
+          <div class="info" style="display: flex; flex-direction: column">
+            <p class="p1">
+              2 HOURS STUDY WITH ME ~ Calm Piano <i class="bx bxs-piano"></i> ~
+              Rain Sound <i class="bx bx-cloud-light-rain"></i>
+            </p>
+
+            <p class="p2">dearmystudy</p>
+            <p class="p3">2,7k view &#183; 7 months ago</p>
+          </div>
+        </div>
+        <div class="img_content">
+          <div style="position: relative;">
+            <img src="thumbnails/thumbnail-flexbox.jpg" />
+            <div
+              style="position: absolute; background-color: rgb(100, 95, 95); color: white; bottom: 10px; right: 2px;"
+            >
+              9:20
+            </div>
+          </div>
+          <div class="info" style="display: flex; flex-direction: column">
+            <p class="p1">
+              2 HOURS STUDY WITH ME ~ Calm Piano <i class="bx bxs-piano"></i> ~
+              Rain Sound <i class="bx bx-cloud-light-rain"></i>
+            </p>
+
+            <p class="p2">dearmystudy</p>
+            <p class="p3">2,7k view &#183; 7 months ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
